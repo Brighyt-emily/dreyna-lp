@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/estil.css">
+</head>
+<body>
+	<div>
+		<h3>VENTAS</h3>
+        <img src="iconos/if_88_111104.png" id="jop">
+	</div>
+	
+	<hr>
+	<div id="form">	
+	<label>Producto</label> <br>	
+		<select name="pro" id="optt" class="txt">
+                    <option value=laptop>Laptop</option>
+                    <option value=tablet>Tablet</option>
+                    <option value=celular>Celular</option>
+                    <option value=></option>
+                </select>     <br>           
+		<label>Precio</label> <br>
+		<input type="text" id="precio" class="caja"><br>
+		<label>Cantidad</label> <br>
+		<input type="text" id="cantidad" class="caja"><br>
+		<button onclick="agregar()" class="boton" id="b1">Guardar</button>
+		<button onclick="modificar()" class="boton" id="b2">Modificar</button>
+	</div>
+	<hr>
+	<table id="data">
+		<thead>
+		<tr>
+			<th>#</th>
+			<th>Producto</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>Subtotal</th>
+			<th colspan="2">Acciones</th>
+		</tr>
+	    </thead>
+	</table>
+
+	<input type="text" placeholder="subtotal" id="subtotal" disabled="true" class="tlt"><br>
+    <input type="text" placeholder="igv" disabled="true"
+             id="igv" class="tlt"><br>
+    <input type="text" placeholder="total" disabled="true" accept="" id="total" class="tlt"><br> 
+	<script type="text/javascript" src="js/scr.js"></script>
+</body>
+</html>
